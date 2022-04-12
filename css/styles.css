@@ -45,3 +45,14 @@ h4 {
   margin-top: 15px;
   font-weight: 100;
 }
+.navicons{
+  display: flex;
+  justify-content: space-around;
+  background-color: #3c3475;
+  height: 50px;
+}
+.homeicon, .baricon, .peopleicon, .settingsicon {
+  margin-top: 10px;
+  height: 30px;
+  fill:white;
+}
