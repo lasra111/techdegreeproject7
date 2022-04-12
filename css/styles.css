@@ -56,3 +56,23 @@ h4 {
   height: 30px;
   fill:white;
 }
+.dashboard{
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: 25% 90%;
+  width:100% ;
+}
+.dashboardtext{
+  align-items: center;
+}
+.dashboardtext h3 {
+  font-weight: 300;
+}
+.rectangle{
+
+width:80%;
+border-left:3px solid #e3e3e3;
+border-bottom: 3px solid #e3e3e3;
+background-color: #ededed;
+margin-top: 0;
+}
