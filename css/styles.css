@@ -77,6 +77,7 @@ background-color: #ededed;
 margin-top: 0;
 }
 .alert{
+
 text-align: center;
 margin-left: 15px;
 border-radius:5px;
@@ -84,4 +85,66 @@ background-color: #7561ab;
 font-weight: 300;
 color:white;
 width:85%;
+}
+.close {
+  background-color: #7561ab;
+  border:none;
+  color:white;
+}
+#traffic{
+  margin-bottom: 0;
+}
+#traffic h3 {
+  font-weight: 300;
+}
+.timespan {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0;
+}
+.timespan h4, .daily h3, .mobile h3, .socialStats h3, .facebookStats h4, .facebookStats p {
+  font-weight: 300;
+}
+.timespan h4:hover{
+  background-color: lightgreen;
+  border-radius: 25px;
+}
+.timespanChart, .daily, .mobile, .socialStats {
+  border-bottom: 5px solid lightgrey;
+  border-width: thin;
+}
+.facebook, .instagram, .twitter{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border: 1px solid lightgrey;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ededed;
+  margin:10px;
+}
+.icon{
+  background-color: #7561ab;
+  border-radius: 50%;
+  height:60px;
+  width:60px;
+  margin-left: 10px;
+}
+.facebookIcon, .instagramIcon, .twitterIcon{
+  height: 100px;
+  width:75px;
+  margin-right: 0;
+  margin-left: 10px;
+  fill:white;
+}
+.facebookStats h4, .facebookStats p, .instagramStats h4, .instagramStats p, .twitter h4, .twitter p{
+  margin-bottom:0;
+  margin-top: 0;
+  font-weight: 300;
+}
+.facebookStats p, .instagramStats p, .twitter p {
+font-size:2em;
+color:grey;
+}
+.facebookStats h4, .instagramStats h4, .twitter h4 {
+  color:#7561ab;
 }
