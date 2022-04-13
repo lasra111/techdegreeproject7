@@ -63,7 +63,7 @@ h4 {
   width:100% ;
 }
 .dashboardtext{
-  align-items: center;
+  text-align: center;
 }
 .dashboardtext h3 {
   font-weight: 300;
@@ -75,4 +75,13 @@ border-left:3px solid #e3e3e3;
 border-bottom: 3px solid #e3e3e3;
 background-color: #ededed;
 margin-top: 0;
+}
+.alert{
+text-align: center;
+margin-left: 15px;
+border-radius:5px;
+background-color: #7561ab;
+font-weight: 300;
+color:white;
+width:85%;
 }
