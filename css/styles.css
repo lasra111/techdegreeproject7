@@ -148,3 +148,18 @@ color:grey;
 .facebookStats h4, .instagramStats h4, .twitter h4 {
   color:#7561ab;
 }
+.membersHeading h3 {
+font-weight: 300;
+}
+.newMembers{
+  display: grid;
+}
+.victoria{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.victoria img{
+  border-radius:50%;
+  height:85px;
+  width:85px;
+}
