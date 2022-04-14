@@ -109,7 +109,8 @@ width:85%;
   background-color: lightgreen;
   border-radius: 25px;
 }
-.timespanChart, .daily, .mobile, .socialStats, .victoria, .dale, .dawn, .dan {
+.timespanChart, .daily, .mobile, .socialStats, .victoria, .dale, .dawn, .dan, .messageUser {
+  padding-bottom: 10px;
   border-bottom: 5px solid lightgrey;
   border-width: thin;
 }
@@ -148,7 +149,7 @@ color:grey;
 .facebookStats h4, .instagramStats h4, .twitter h4 {
   color:#7561ab;
 }
-.membersHeading h3, .recentActivityHeading {
+.membersHeading h3, .recentActivityHeading, .messageHeading h3, .settingsHeading h3 {
 font-weight: 300;
 }
 .newMembers{
@@ -180,4 +181,75 @@ font-weight: 300;
 .signUp h4{
   margin:0;
   font-weight: 300;
+}
+
+#search {
+  width:100%;
+  height:3em;
+  border-radius:5px;
+  background-color: #ededed;
+  border: 2px solid lightgrey;
+  margin-bottom:20px;
+}
+#message {
+  width:100%;
+  height: 10em;
+  border-radius: 5px;
+  background-color: #ededed;
+  border: 2px solid lightgrey;
+}
+#sendButton{
+  width:100%;
+  height: 3em;
+  background-color: #7561ab;
+  color:white;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+}
+.emailNoti, .profilePub  {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.timezone, .emailNoti, .profilePub {
+  margin-top: 10px;
+}
+#time {
+  width: 100%;
+  background-color: #ededed;
+  font-weight: 300;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  margin-top: 10px;
+  height:3em;
+}
+.saveOrCancel {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  margin-top: 10px;
+  width:100%;
+  grid-column-gap: 15px;;
+}
+#saveButton{
+  height: 3em;
+  background-color: #7561ab;
+  color:white;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  width:90%;
+
+}
+#cancelButton {
+  height: 3em;
+  background-color: darkgrey;
+  color:white;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  width:90%;
+}
+footer h5{
+  text-align: center;
+  font-weight: 100;
 }
