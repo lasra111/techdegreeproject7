@@ -74,18 +74,29 @@
                       datasets: [{
                           label: 'Traffic',
                           data: [750, 1250,1000 , 2000, 1500,1750, 1250, 1850, 2250, 1500, 2500 ],
-                          backgroundColor: '#7561ab',
+                          backgroundColor: 'rgba(112, 104, 201, .5)',
 
                           borderWidth: 1
                       }]
                   },
                   options: {
-                      scales: {
-                          y: {
-                              beginAtZero: true
-                          }
-                      }
-                  }
+                    backgroundColor: 'rgba(112, 104, 201, .5)',
+                    fill: true,
+                    aspectRatio: 2,
+                    animation: {
+                    duration: 0
+                    },
+                    scales: {
+                    y: {
+                    beginAtZero: true
+                    }
+                    },
+                    plugins: {
+                    legend: {
+                    display: false
+                    }
+                    }
+                    }
               });
             </script>
         </div>
@@ -155,7 +166,7 @@
                       }
                       }
                       }
-                      });                            
+                      });
               </script>
           </div>
         </div>
