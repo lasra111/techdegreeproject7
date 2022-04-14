@@ -109,7 +109,7 @@ width:85%;
   background-color: lightgreen;
   border-radius: 25px;
 }
-.timespanChart, .daily, .mobile, .socialStats {
+.timespanChart, .daily, .mobile, .socialStats, .victoria, .dale, .dawn, .dan {
   border-bottom: 5px solid lightgrey;
   border-width: thin;
 }
@@ -148,18 +148,36 @@ color:grey;
 .facebookStats h4, .instagramStats h4, .twitter h4 {
   color:#7561ab;
 }
-.membersHeading h3 {
+.membersHeading h3, .recentActivityHeading {
 font-weight: 300;
 }
 .newMembers{
   display: grid;
 }
-.victoria{
+.victoria, .dale, .dawn, .dan {
   display: grid;
   grid-template-columns: 1fr;
+  justify-items:center;
+  margin:10px;
 }
-.victoria img{
+.victoria img, .dale img, .dawn img, .dan img {
   border-radius:50%;
   height:85px;
   width:85px;
+}
+.vicName, .daleName, .dawnName, .danName {
+  display: grid;
+  justify-items:center;
+
+}
+.vicName h4, .vicName p, .daleName h4, .daleName p, .dawnName h4, .dawnName p, .danName h4, .danName p {
+  font-weight: 300;
+  margin:0;
+}
+.vicName p, .daleName p, .dawnName p, .danName p {
+  color:#7561ab;
+}
+.signUp h4{
+  margin:0;
+  font-weight: 300;
 }
