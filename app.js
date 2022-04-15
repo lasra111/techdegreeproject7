@@ -22,7 +22,10 @@ let bellButton=document.getElementById('gbell');
 bellButton.addEventListener('click', ()=> {
   for(let i=0;i<generalNoti.length;i++){
     generalNoti[i].style.display='';
+  
   };
   let generalNotiDiv=document.getElementById('generalNoti');
   generalNotiDiv.style.display='grid';
+
+
 });
