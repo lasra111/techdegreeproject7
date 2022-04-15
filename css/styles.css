@@ -19,7 +19,7 @@ h2{
   border-right: 3px solid grey;
   border-width: thin;
 }
-.gbell{
+.gbell, #followerClose, #passwordClose, #messageClose {
 background-color: #7561ab;
   padding-right: 0;
   border:none;
