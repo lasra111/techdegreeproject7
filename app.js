@@ -5,7 +5,8 @@ for(let i=0; i<alert.length; i++){
   alert[i].style.display='none';
 }
 });
-
+let generalNotiDiv=document.getElementById('generalNoti');
+generalNotiDiv.style.display='none';
 let generalNoti = document.querySelectorAll('li');
 for(let i=0;i<generalNoti.length;i++){
   generalNoti[i].style.display='none';
@@ -29,11 +30,11 @@ bellButton.addEventListener('click', ()=> {
   followerClose.style.display='';
   passwordClose.style.display='';
   messageClose.style.display='';
-  let generalNotiDiv=document.getElementById('generalNoti');
-  generalNotiDiv.style.display='grid';
+  generalNotiDiv.style.display='';
 
 
 });
+let listNoti=document.getElementById('listNoti');
 followerClose.addEventListener('click', ()=> {
 follower.style.display='none';
 });

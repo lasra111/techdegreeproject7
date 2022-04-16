@@ -19,16 +19,30 @@ h2{
   border-right: 3px solid grey;
   border-width: thin;
 }
-.gbell, #followerClose, #passwordClose, #messageClose {
+.gbell {
 background-color: #7561ab;
   padding-right: 0;
   border:none;
   cursor:pointer;
     margin-right: 0;
 }
-#generalNoti{
-  display: grid;
+#followerClose, #passwordClose, #messageClose{
+  border:none;
+  background-color: white;
 }
+#generalNoti{
+  position: absolute;
+  left:30%;
+  background-color: white;
+  border:3px solid lightgrey;
+  border-radius: 5px;
+
+  }
+#generalNoti li{
+  list-style: none;
+  padding-bottom:10px;
+}
+
 .bell {
   height: 50px;
   width:25px;
@@ -52,8 +66,10 @@ h4 {
   font-weight: 100;
 }
 .navicons{
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(20px, 1.5fr));
+  padding-left: 15px;
+
   background-color: #3c3475;
   height: 50px;
 }
@@ -259,4 +275,18 @@ font-weight: 300;
 footer h5{
   text-align: center;
   font-weight: 100;
+}
+
+@media (min-width:768px){
+
+  .navicons{
+    display: grid;
+    justify-items:start;
+    grid-template-columns: 20%;
+    background-color: #3c3475;
+    height:auto;
+  }
+  .dashboard{
+
+  }
 }
