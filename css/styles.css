@@ -286,7 +286,17 @@ footer h5{
     background-color: #3c3475;
     height:auto;
   }
-  .dashboard{
-
+  .gridMain1{
+    grid-area: navigation;
+    background-color: #3c3475;
+  }
+  .gridMain2{
+    grid-area:main;
+  }
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    grid-template-areas:
+    'navigation main';
   }
 }
