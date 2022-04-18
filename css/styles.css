@@ -1,13 +1,22 @@
 * {
   box-sizing: border-box;
   font-family: 'Anek Tamil', sans-serif;
+
+}
+body {
+  width:100%;
+}
+header {
+  width:100%;
 }
 .header {
-  display:flex;
-  justify-content: space-between;
+  display:grid;
+  grid-template-columns: 30% 70%;
+
   margin: 0;
   background-color: #7561ab;
   color: white;
+  width:100%;
 }
 h2{
   margin-top: 5px;
@@ -80,8 +89,8 @@ h4 {
 }
 .dashboard{
   display: grid;
-  grid-column-gap: 10px;
-  grid-template-columns: 25% 90%;
+
+  grid-template-columns: 40% 60%;
   width:100% ;
 }
 .dashboardtext{
@@ -92,7 +101,6 @@ h4 {
 }
 .rectangle{
 
-width:80%;
 border-left:3px solid #e3e3e3;
 border-bottom: 3px solid #e3e3e3;
 background-color: #ededed;
@@ -132,7 +140,7 @@ width:85%;
   background-color: lightgreen;
   border-radius: 25px;
 }
-.timespanChart, .daily, .mobile, .socialStats, .victoria, .dale, .dawn, .dan, .messageUser {
+.widget-container-full, .daily, .mobile, .socialStats, .victoria, .dale, .dawn, .dan, .messageUser {
   padding-bottom: 10px;
   border-bottom: 5px solid lightgrey;
   border-width: thin;
@@ -292,11 +300,40 @@ footer h5{
   }
   .gridMain2{
     grid-area:main;
+    padding-left:10px;
   }
   .gridContainer {
     display: grid;
     grid-template-columns: 55px 1fr;
     grid-template-areas:
     'navigation main';
+  }
+  .trafficTime {
+    display:grid;
+    grid-template-columns: 50% 50%;
+
+  }
+  .dailyMobile {
+    display:grid;
+    grid-template-columns: 50% 50%;
+  }
+  .socialStats2 {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+  }
+  .victoria, .dale, .dawn, .dan {
+    display: grid;
+    grid-template-columns: 15% 65% 10%;
+    align-items: start;
+    align-self: auto;
+    justify-items:center;
+    }
+    .vicName{
+      display: grid;
+
+    }
+  .signUp {
+    display:grid;
+    align-items:stretch;
   }
 }
