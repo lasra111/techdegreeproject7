@@ -38,7 +38,7 @@ background-color: #7561ab;
   .bell {
     transition: transform 0.4s ease-in;
     stroke:lightgreen;
-    stroke-width:4px;
+    stroke-width:3px;
   }
 .bell:hover{
   transform:scale(1.2) rotate(25deg);
