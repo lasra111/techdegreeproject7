@@ -144,10 +144,15 @@ width:85%;
 .timespan h4, .daily h3, .mobile h3, .socialStats h3, .facebookStats h4, .facebookStats p {
   font-weight: 300;
 }
-.timespan h4:hover{
-  background-color: lightgreen;
-  border-radius: 25px;
+.hourlyButton, .dailyButton, .weeklyButton, .monthlyButton {
+border:none;
+background-color: white;
+border-radius: 25px;
 }
+.hourlyButton:hover, .dailyButton:hover, .weeklyButton:hover,.monthlyButton:hover {
+  background-color: lightgreen;
+}
+
 .widget-container-full, .daily, .mobile, .socialStats, .victoria, .dale, .dawn, .dan, .messageUser {
   padding-bottom: 10px;
   border-bottom: 5px solid lightgrey;
