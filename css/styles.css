@@ -33,9 +33,17 @@ background-color: #7561ab;
   padding-right: 0;
   border:none;
   cursor:pointer;
-    margin-right: 0;
+  margin-right: 0;
+  }
+  .bell {
+    transition: transform 0.4s ease-in;
+    stroke:lightgreen;
+    stroke-width:4px;
+  }
+.bell:hover{
+  transform:scale(1.2) rotate(25deg);
 }
-#followerClose, #passwordClose, #messageClose{
+#followerClose, #passwordClose, #messageClose, #closeClose{
   border:none;
   background-color: white;
 }

@@ -20,7 +20,7 @@ passwordClose.style.display='none';
 let messages=document.getElementById('messages');
 let messageClose=document.getElementById('messageClose');
 messageClose.style.display='none';
-
+let bellIcon=document.getElementsByClassName('bell');
 let bellButton=document.getElementById('gbell');
 bellButton.addEventListener('click', ()=> {
   for(let i=0;i<generalNoti.length;i++){
@@ -32,7 +32,6 @@ bellButton.addEventListener('click', ()=> {
   messageClose.style.display='';
   generalNotiDiv.style.display='';
 
-
 });
 let listNoti=document.getElementById('listNoti');
 followerClose.addEventListener('click', ()=> {
@@ -43,4 +42,16 @@ password.style.display='none';
 });
 messageClose.addEventListener('click', ()=> {
 messages.style.display='none';
+});
+let closeClose= document.getElementById('closeClose');
+closeClose.addEventListener('click', ()=> {
+  for(let i=0;i<generalNoti.length;i++){
+    generalNoti[i].style.display='none';
+  }
+  for(let i= 0; i<bellIcon.length; i++){
+    bellIcon[i].style.stroke='white';
+  }
+  for(let i=0; i<alert.length; i++){
+    alert[i].style.display='none';
+  }
 });
