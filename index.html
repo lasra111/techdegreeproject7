@@ -7,6 +7,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100;300;400;500&family=IBM+Plex+Serif:ital,wght@1,300&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/css-toggle-switch@latest/dist/toggle-switch.css">
   </head>
   <body>
     <header>
@@ -245,6 +246,7 @@
           </div>
         </div>
         </div>
+        <div class='newAndRec'>
         <div>
           <div class='membersHeading'>
             <h3>New Members</h3>
@@ -252,10 +254,12 @@
         <div class='newMembers'>
           <div class='victoria'>
             <img src='img/member1.jpg' alt='picture of victoria'>
+            <div class='vicname'>
               <div class='vicName'>
                 <h4>Victoria Chambers</h4>
                 <p>victoria.chambers80@example.com</p>
               </div>
+            </div>
             <div class='signUp'>
               <h4>10/15/20</h4>
             </div>
@@ -293,48 +297,60 @@
         </div>
       </div>
         <div class='recentActivity'>
-          <h3 class='recentActivityHeading'> Recent Activity</h3>
-          <div class='victoria'>
+          <div class='recentActivityHeading'>
+            <h3> Recent Activity</h3>
+          </div>
+          <div class='RA'>
+          <div class='RAMembers'>
             <img src='img/member1.jpg' alt='picture of Victoria'>
+            <div class='RAWrap'>
               <div class='vicName' id='vicRA'>
                 <h4>Victoria Chambers commented on <strong>WebApp's SEO Tips</strong></h4>
-
               </div>
             <div class='signUp'>
               <h4>4 hours Ago</h4>
             </div>
           </div>
-            <div class='dale'>
+          </div>
+            <div class='RAMembers'>
               <img src='img/member2.jpg' alt='picture of Dale'>
+              <div class='RAWrap'>
                 <div class='daleName' id='daleRA'>
                   <h4>Dale Byrd liked the post <strong>FaceBook's Changes for 2021</strong></h4>
 
                 </div>
-              <div class='signUp'>
+              <div class='postTime'>
                 <h4>5 hours Ago</h4>
               </div>
             </div>
-              <div class='dawn'>
+            </div>
+              <div class='RAMembers'>
                 <img src='img/member3.jpg' alt='picture of Dawn'>
+                <div class='RAWrap'>
                   <div class='dawnName' id='dawnRA'>
                     <h4>Dawn Wood commented on the post <strong>FaceBook's Changes for 2021</strong></h4>
 
                   </div>
-                <div class='signUp'>
+                <div class='postTime'>
                   <h4>5 hours Ago</h4>
                 </div>
               </div>
-                <div class='dan'>
+              </div>
+                <div class='RAMembers'>
                   <img src='img/member4.jpg' alt='picture of dan'>
+                  <div class='RAWrap'>
                     <div class='danName' id='danRA'>
                       <h4>Dan Oliver posted <strong>WebApp's SEO Tips</strong></h4>
-
                     </div>
-                  <div class='signUp'>
+                  <div class='postTime'>
                     <h4>1 Day Ago</h4>
                   </div>
                 </div>
+                </div>
               </div>
+              </div>
+            </div>
+            <div class='messAndSet'>
               <div class='messageUser'>
                 <div class='messageHeading'>
                   <h3>Message User</h3>
@@ -350,12 +366,34 @@
                   <h3>Settings</h3>
                 </div>
                 <div class='emailNoti'>
-                  <label for='email'>Send Email Notifications</label>
-                  <input type='checkbox' name='email' id='email'>
+                  <label class="switch-light switch-material" onclick="">
+                    <input type="checkbox">
+
+                    <strong>
+                      Send Email Notifications
+                    </strong>
+
+                    <span>
+                      <span>Off</span>
+                      <span>On</span>
+                      <a></a>
+                    </span>
+                  </label>
                 </div>
                 <div class='profilePub'>
-                  <label for='profile'>Set Profile to Public</label>
-                  <input type='checkbox' name='profile' id='profile'>
+                  <label class="switch-light switch-material" onclick="">
+                    <input type="checkbox">
+
+                    <strong>
+                      Set Profile to Public
+                    </strong>
+
+                    <span>
+                      <span>Off</span>
+                      <span>On</span>
+                      <a></a>
+                    </span>
+                  </label>
                 </div>
                 <div class='timezone'>
                   <form action='#'>
@@ -413,6 +451,7 @@
                   </div>
                 </div>
               </div>
+            </div>
             </div>
           </div>
               <script src="app.js"></script>

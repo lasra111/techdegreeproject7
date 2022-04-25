@@ -1,8 +1,8 @@
 let close=document.getElementById('close');
-let alert=document.getElementsByClassName('alert');
+let alerts=document.getElementsByClassName('alert');
 close.addEventListener('click', ()=> {
-for(let i=0; i<alert.length; i++){
-  alert[i].style.display='none';
+for(let i=0; i<alerts.length; i++){
+  alerts[i].style.display='none';
 }
 });
 let generalNotiDiv=document.getElementById('generalNoti');
@@ -51,7 +51,19 @@ closeClose.addEventListener('click', ()=> {
   for(let i= 0; i<bellIcon.length; i++){
     bellIcon[i].style.stroke='white';
   }
-  for(let i=0; i<alert.length; i++){
-    alert[i].style.display='none';
+  for(let i=0; i<alerts.length; i++){
+    alerts[i].style.display='none';
+  }
+});
+let send = document.getElementById('sendButton');
+let search = document.getElementById('search');
+let message=document.getElementById('message');
+send.addEventListener('click', ()=> {
+  if(search.value.length=== 0){
+    alert('Please enter text into the search area');
+  }else if(message.value.length=== 0){
+    alert('Please enter text into the message area');
+  } else {
+    alert('Message sent!');
   }
 });
