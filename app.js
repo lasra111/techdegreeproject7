@@ -47,6 +47,7 @@ let closeClose= document.getElementById('closeClose');
 closeClose.addEventListener('click', ()=> {
   for(let i=0;i<generalNoti.length;i++){
     generalNoti[i].style.display='none';
+    generalNotiDiv.style.display='none';
   }
   for(let i= 0; i<bellIcon.length; i++){
     bellIcon[i].style.stroke='white';
@@ -61,7 +62,7 @@ let message=document.getElementById('message');
 send.addEventListener('click', ()=> {
   if(search.value.length=== 0){
     alert('Please enter text into the search area');
-  }else if(message.value.length=== 0){
+  }else if(message.textContent.length=== 0){
     alert('Please enter text into the message area');
   } else {
     alert('Message sent!');
