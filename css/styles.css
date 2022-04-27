@@ -256,7 +256,10 @@ font-weight: 300;
 .emailNoti {
   width:100%;
 }
-
+.switch-light.switch-material {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
 .timezone, .emailNoti, .profilePub {
   margin-top: 10px;
 }
