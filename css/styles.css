@@ -395,9 +395,12 @@ footer h5{
     }
     .settings {
       padding-left: 10px;
-
+      display: grid;
       width:100%;
     }
-
+  .saveOrCancel {
+    align-self: end;
+    margin-bottom: 10px;
+  }
 
 }
